@@ -10,7 +10,7 @@ for /f "tokens=*" %%i in ('powercfg /getactivescheme') do (
     set "current=%%i"
 )
 echo ================================
-echo Press [T] then [Enter] to toggle
+echo Press [t] then [Enter] to toggle
 echo Press any other key to exit
 set /p choice=Your input: 
 
@@ -31,4 +31,5 @@ if /i "!choice!"=="t" (
     echo Exiting...
     timeout /t 1 >nul
     exit /b
+
 )
